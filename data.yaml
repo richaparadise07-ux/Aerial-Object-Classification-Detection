@@ -1,0 +1,23 @@
+# 1. Define the absolute base path to your dataset folder
+path: C:/Users/ThinkPad/Project_5/object_detection_Dataset
+
+# 2. Define the subfolders relative to the base path above
+train: train/images  # Points to C:/Users/ThinkPad/Project_5/object_detection_Dataset/train/images
+val: valid/images    # Points to C:/Users/ThinkPad/Project_5/object_detection_Dataset/valid/images
+test: test/images    # Points to C:/Users/ThinkPad/Project_5/object_detection_Dataset/test/images
+
+#train: C:\Users\ThinkPad\Project_5\object_detection_Dataset\test/images
+#val: object_detection_Dataset/valid/images
+#test: object_detection_Dataset/test/images
+
+nc: 2
+names:
+  0: bird
+  1: drone
+
+roboflow:
+  workspace: new-workspace-x00wt
+  project: drones-and-birds-0muie
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/new-workspace-x00wt/drones-and-birds-0muie/dataset/1
