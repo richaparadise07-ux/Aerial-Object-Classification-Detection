@@ -31,35 +31,37 @@ Plot accuracy/loss graphs
 🛑 Early Stopping triggered at epoch 10!
 
 📊 Custom_CNN Final Classification Report:
+
               precision    recall  f1-score   support
 
         bird       0.95      0.56      0.70        36
        drone       0.53      0.95      0.68        19
-
     accuracy                           0.69        55
-   macro avg       0.74      0.75      0.69        55
-weighted avg       0.81      0.69      0.69        55
+    macro avg      0.74      0.75      0.69        55
+    weighted avg   0.81      0.69      0.69        55
 
 Confusion Matrix:
 [[20 16]
- [ 1 18]]
+[ 1 18]]
+
+
 <img width="611" height="390" alt="download" src="https://github.com/user-attachments/assets/ad022c6c-01f9-414c-8b16-142cd50ae6b0" />
 
 🛑 Early Stopping triggered at epoch 6!
 
 📊 ResNet50_Transfer Final Classification Report:
+             
               precision    recall  f1-score   support
-
         bird       0.96      0.72      0.83        36
        drone       0.64      0.95      0.77        19
-
-    accuracy                           0.80        55
-   macro avg       0.80      0.83      0.80        55
-weighted avg       0.85      0.80      0.80        55
+       accuracy                        0.80        55
+       macro avg    0.80     0.83      0.80        55
+       weighted avg 0.85     0.80      0.80        55
 
 Confusion Matrix:
 [[26 10]
- [ 1 18]]
+[ 1 18]]
+
  <img width="617" height="390" alt="download" src="https://github.com/user-attachments/assets/45593cca-bc8e-4185-a3da-2d996338d6c4" />
 
 ## 📂 Repository Structure
@@ -74,7 +76,7 @@ Project_5/
 
 ├── app.py                     # Streamlit application UI script
 
-```
+
 Project_5/
 ├── object_detection_Dataset/
 │   ├── train/                 # Balanced training image tensors & .txt vectors
@@ -124,11 +126,15 @@ pip install ultralytics streamlit opencv-python-headless
 
 ### 3. Run the Custom GUI Terminal
 Launch your web-based machine learning workspace locally:
-```bash
-streamlit run app.py
+
+## streamlit run app.py
+
 <img width="720" height="357" alt="Capture1" src="https://github.com/user-attachments/assets/f6cfb144-36e3-4423-9fc9-3f742fcd08be" />
+
 <img width="646" height="411" alt="Capture2" src="https://github.com/user-attachments/assets/04e91687-f5e4-4c0b-8885-8d54a083c615" />
+
 <img width="690" height="437" alt="Capture3" src="https://github.com/user-attachments/assets/edfb1088-2ba6-4521-b944-6bfacbe44161" />
+
 
 streamlit run app_yolo.py
 
@@ -140,8 +146,9 @@ streamlit run app_yolo.py
 
 
 
-```
 Open `http://localhost:8501` in your browser, adjust your **Confidence Slider** parameters down to isolate micro-targets, and verify performance on unseen `test/images` directory frames.
+
+
 
 ## 📝 Observations & Key Insights
 
